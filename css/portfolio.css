@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(0, 0, 0);
-  background-image: url(../imgs/Portfolio-text.png);
+  background-image: url(/imgs/Portfolio-text.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 110px;
