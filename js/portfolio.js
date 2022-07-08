@@ -1,8 +1,9 @@
-const toggle = document.querySelector(".toggle");
-const navmenu = document.querySelector(".navmenu");
+// navbar:
+const toggle = document.querySelector(".toggle")
+const navmenu = document.querySelector(".navmenu")
 
 toggle.addEventListener("click", () => {
-  navmenu.classList.toggle("visible");
+    navmenu.classList.toggle("visible");
 });
 
 // :::: JS Portfolio ::::
