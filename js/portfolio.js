@@ -9,6 +9,7 @@ toggle.addEventListener("click", () => {
 // :::: JS Portfolio ::::
 let list = document.querySelectorAll(".list");
 let itemBox = document.querySelectorAll(".itemBox");
+let img = document.querySelectorAll(".img");
 
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", function () {
@@ -29,4 +30,10 @@ for (let i = 0; i < list.length; i++) {
     }
   });
 }
+
+itemBox.forEach(popup =>popup.addEventListener("click",()=>
+{
+  popup.classList.toggle("active")
+}
+))
 // :::: FIN JS Portfolio ::::
