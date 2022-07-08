@@ -1,9 +1,9 @@
-@import url(//https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900);
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: raleway, sans-serif;
 }
+
 body {
   background-image: url(../imgs/background.png);
   background-color: rgb(0, 0, 0);
