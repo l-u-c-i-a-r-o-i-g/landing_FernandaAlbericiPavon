@@ -184,14 +184,13 @@ h1 {
 .contact-info-container {
   margin: 0 auto;
   display: block;
-  font-size: 2rem;
 }
 .icon {
   margin: 0 25px;
 }
 .contact-info {
   margin: 3.2rem auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 .contact-form {
