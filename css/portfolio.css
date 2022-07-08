@@ -111,10 +111,16 @@ h1{
 }
 
 
-@media only screen and (max-width: 575px){
+@media (max-width: 768px){
   body{
      padding-top: 70px 20px 0;
      
+  }
+
+  /*-----------------HEADER----------------*/
+
+  .title-logo{
+      text-decoration: none;
   }
 
   .head{
@@ -180,8 +186,8 @@ h1{
  .social{
   visibility: hidden;
  }
-
 }
+
 
 /* Estilos Portfolio */
 .title {
