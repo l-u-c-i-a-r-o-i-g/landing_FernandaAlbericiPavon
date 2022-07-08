@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: url(./igms/Contacto-text.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 110px;
+  height: 100%;
+  background-position-y: 100%;
+  margin-bottom: 90px;
+}
+
+.head {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(212, 2, 82);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: max-content;
+}
+
+h1 {
+  font-size: 25px;
+  padding: 0 40px;
+  font-weight: bold;
+  line-height: 80px;
+  color: white;
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  padding: 0 250px 0 250px;
+  margin-left: -120px;
+}
+
+.list a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 30px;
+  transition: 0.7s ease-out;
+  border-bottom: 3px solid transparent;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.list a:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+.social {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+.social ul li {
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.social ul li a {
+  display: block;
+  padding: 0 5px;
+  background: rgba(184, 23, 85, 0.849);
+  color: white;
+  line-height: 30px;
+  font-size: 25px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0);
+  border-radius: 20px;
+  transition: 0.7s ease-out;
+}
+
+.social ul li a:hover {
+  background: rgba(61, 56, 56, 0.849);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px 20px 0;
+    background-image: none;
+  }
+
+  .head {
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 25px;
+    padding: 0 20px;
+    font-weight: bold;
+    line-height: 60px;
+    color: white;
+  }
+
+  .navmenu {
+    flex-direction: column;
+    align-items: center;
+    background-color: seagreen;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 0;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .list {
+    flex-direction: column;
+    height: 10%;
+  }
+
+  .toggle {
+    margin-left: 430px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .visible {
+    left: 0;
+  }
+
+  .social {
+    visibility: collapse;
+  }
+}
+
+/* Estilos Contacto */
+.title {
+  border-bottom: 2px solid rgba(184, 23, 85, 0.849);
+  margin: 0 auto;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem1;
+}
+
+.contact-section {
+  padding: 40px 0;
+}
+
+.contact-section#blur.active {
+  filter: opacity(40%);
+  pointer-events: none;
+  user-select: none;
+}
+.contact-info-container {
+  margin: 0 auto;
+  display: block;
+  font-size: 2rem;
+}
+.icon {
+  margin: 0 25px;
+}
+.contact-info {
+  margin: 3.2rem auto;
+  font-size: 2rem;
+  color: white;
+}
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 10px;
+}
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  color: aliceblue;
+  font-style: italic;
+  padding: 10px 15px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 1px rgba(184, 23, 85, 0.849);
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 140px;
+}
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background-color: rgba(184, 23, 85, 0.849);
+  color: aliceblue;
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.contact-form-btn:hover {
+  background-color: rgb(184, 23, 85);
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 30px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background-color: whitesmoke;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+#popup.active {
+  top: 40%;
+
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.popup_header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.popup_text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.popup_close {
+  display: flex;
+  justify-content: right;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgba(184, 23, 85, 0.849);
+}
+
+.popup_continue {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 5rem 0 0 0;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgba(184, 23, 85, 0.849);
+  font-style: italic;
+}
+/* FIN Estilos Contacto */

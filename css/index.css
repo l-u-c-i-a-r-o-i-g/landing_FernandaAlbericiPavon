@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-image: url(../imgs/imgfondo.png);
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 600px;
+  height: 550px;
+}
+
+/*-----------------HEADER----------------*/
+
+.head {
+  width: 100%;
+  height: 75px;
+  background-color: rgb(212, 2, 82);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: max-content;
+}
+
+h1 {
+  font-size: 25px;
+  padding: 0 40px;
+  font-weight: bold;
+  line-height: 80px;
+  color: white;
+}
+
+.navmenu {
+  list-style: none;
+  display: flex;
+  padding: 0 250px 0 250px;
+  margin-left: -120px;
+}
+
+.list a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 30px;
+  transition: 0.7s ease-out;
+  border-bottom: 3px solid transparent;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.list a:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+.social {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+.social ul li {
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.social ul li a {
+  display: block;
+  padding: 0 5px;
+  background: rgba(184, 23, 85, 0.849);
+  color: white;
+  line-height: 30px;
+  font-size: 25px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0);
+  border-radius: 20px;
+  transition: 0.7s ease-out;
+}
+
+.social ul li a:hover {
+  background: rgba(61, 56, 56, 0.849);
+}
+
+/*------------------PAGINA------------------*/
+
+.presentacion {
+  width: 56%;
+  height: 300px;
+  position: absolute;
+  z-index: -10;
+  top: 160px;
+  left: 30px;
+}
+
+.presentacion h1 {
+  font-size: 35px;
+}
+
+.presentacion p {
+  font-size: 20px;
+  padding-left: 43px;
+  padding-top: 30px;
+  color: white;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.img-fer {
+  opacity: 50%;
+  padding: 30px;
+}
+
+.btn {
+  position: absolute;
+  top: 380px;
+  left: 75px;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #ff0a78;
+}
+
+.btn:hover {
+  background-color: #ff6392;
+  top: 390px;
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    padding-top: 70px 20px 0;
+  }
+
+  .head {
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 25px;
+    padding: 0 20px;
+    font-weight: bold;
+    line-height: 60px;
+    color: white;
+  }
+
+  .navmenu {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 2, 82);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 0;
+    z-index: 10;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .list {
+    flex-direction: column;
+    height: 10%;
+  }
+
+  .toggle {
+    margin-left: 430px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .visible {
+    left: 0;
+  }
+
+  .social {
+    visibility: collapse;
+  }
+
+  .presentacion {
+    width: 80%;
+    position: absolute;
+    z-index: -10;
+    left: 50px;
+    top: 100px;
+  }
+
+  .presentacion h1 {
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .presentacion p {
+    font-size: 20px;
+    text-align: center;
+    padding-right: 40px;
+    color: white;
+    font-weight: 100;
+    line-height: 30px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 450px;
+    left: 170px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: #ff0a78;
+  }
+
+  .btn:hover {
+    background-color: #ff6392;
+    top: 460px;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/44e81db38f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fernanda Alberici - Contacto</title>
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar">
+        <h1>Fernanda Alberici</h1>
+        <button class="toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navmenu">
+          <li class="list"><a href="index.html">inicio</a></li>
+          <li class="list"><a href="sobremi.html">sobre mi</a></li>
+          <li class="list">
+            <a href="portfolio.html">portfolio</a>
+          </li>
+          <li class="list"><a href="contacto.html">contacto</a></li>
+        </ul>
+        <div class="social">
+          <ul>
+            <li>
+              <a id="face" href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a id="twitter" href=""><i class="fa fa-behance fa-xs"></i></a>
+            </li>
+            <li>
+              <a id="instagram" href=""
+                ><i class="fa fa-instagram fa-xs"></i
+              ></a>
+            </li>
+            <li>
+              <a id="youtube" href=""><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="title">Contacto</h1>
+
+    <div class="contact-section" id="blur">
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/faalbericipavon@gmail.com "
+        method="POST"
+      >
+        <section class="contact-info-container">
+          <div class="contact-info">
+            <i class="icon fa fa-whatsapp fa-xl"></i>(011) 3115 - 4419
+          </div>
+          <div class="contact-info">
+            <i class="icon fa fa-envelope fa-xl"></i>faalbericipavon@gmail.com
+          </div>
+        </section>
+        <input
+          type="text"
+          name="Nombre"
+          class="contact-form-text"
+          placeholder="Nombre..."
+          required
+        />
+        <input
+          type="email"
+          name="Email"
+          class="contact-form-text"
+          placeholder="Email..."
+          required
+        />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Hola Fernanda, tenes una nueva consulta en tu sitio web"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <textarea
+          class="contact-form-text"
+          name="Mensaje"
+          placeholder="Mensaje..."
+        ></textarea>
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/contacto/contacto.html"
+        />
+        <input
+          onclick="toggle()"
+          data-toggle="modal"
+          type="submit"
+          class="contact-form-btn"
+          value="Enviar"
+        />
+      </form>
+    </div>
+    <div id="popup">
+      <a class="popup_close" href="contacto.html" onclick="toggle()"> X</a>
+      <h2 class="popup_header">¡Gracias por enviar tu consulta!</h2>
+      <p class="popup_text">Me pondré en contacto a la brevedad.</p>
+      <a class="popup_continue" href="contacto.html" onclick="toggle()">
+        Continuar navegando</a
+      >
+    </div>
+    <script src="./js/contacto.js"></script>
+  </body>
+</html>
