@@ -258,7 +258,7 @@ section ul li.active {
   z-index: 1;
 }
 
-.photo .box .itemBox.active img {
+.photo .box .itemBox.enlarge img {
   position: fixed;
   margin: 0 auto;
   width: 100%;

@@ -8,8 +8,8 @@ toggle.addEventListener("click", () => {
 
 // :::: JS Portfolio ::::
 let list = document.querySelectorAll(".list");
+let filter = document.querySelectorAll(".filter");
 let itemBox = document.querySelectorAll(".itemBox");
-let img = document.querySelectorAll(".img");
 
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", function () {
@@ -20,12 +20,12 @@ for (let i = 0; i < list.length; i++) {
 
     let dataFilter = this.getAttribute("data-filter");
 
-    for (let k = 0; k < itemBox.length; k++) {
-      itemBox[k].classList.remove("active");
-      itemBox[k].classList.add("hide");
-      if (itemBox[k].getAttribute("data-item") == dataFilter) {
-        itemBox[k].classList.remove("hide");
-        itemBox[k].classList.add("active");
+    for (let k = 0; k < filter.length; k++) {
+      filter[k].classList.remove("active");
+      filter[k].classList.add("hide");
+      if (filter[k].getAttribute("data-item") == dataFilter) {
+        filter[k].classList.remove("hide");
+        filter[k].classList.add("active");
       }
     }
   });
@@ -33,7 +33,7 @@ for (let i = 0; i < list.length; i++) {
 
 itemBox.forEach(popup =>popup.addEventListener("click",()=>
 {
-  popup.classList.toggle("active")
+  popup.classList.toggle("enlarge")
 }
 ))
 // :::: FIN JS Portfolio ::::
