@@ -7,7 +7,7 @@ toggle.addEventListener("click", () => {
 });
 
 // :::: JS Portfolio ::::
-let list = document.querySelectorAll(".list");
+let list = document.querySelectorAll(".list_filter");
 let filter = document.querySelectorAll(".filter");
 let itemBox = document.querySelectorAll(".itemBox");
 
