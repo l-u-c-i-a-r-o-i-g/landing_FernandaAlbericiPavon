@@ -191,7 +191,7 @@ h1{
 
 
 
-/* Estilos Contacto */
+/* Estilos Contacto -Lucía-*/
 .title {
   border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
   margin: 4rem auto 0 auto;
@@ -225,7 +225,7 @@ h1{
   display: flex;
   align-items: center;
   margin: 3.2rem auto;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white;
 }
 .contact-info:hover span{

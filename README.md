@@ -1,5 +1,7 @@
 Sitio Web desarrollado para Fernanda Alberici Pavón
 
+Faltantes:
+
 Nav:
 
     No es responsive
