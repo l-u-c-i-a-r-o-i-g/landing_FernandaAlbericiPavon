@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: raleway, sans-serif;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: url(../imgs/Portfolio-text.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 110px;
+  height: 100%;
+  background-position-y: 20%;
+  margin-bottom: 100px;
+}
+
+/*-----------------HEADER----------------*/
+.title-logo{
+  text-decoration: none;
+}
+
+.head{
+  width: 100%;
+  height: 75px;
+  background-color: rgb( 218, 24, 70
+  );
+  
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: max-content;
+}
+
+h1{
+  font-size: 25px;
+  padding: 0 40px;
+  font-weight: bold;
+  line-height: 80px;
+  color: white;
+}
+
+.navmenu{
+  list-style: none;
+  display: flex;
+  padding: 0 250px 0 250px;
+  margin-left: -120px;
+  
+}
+
+.list a{
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 30px;
+  transition: 0.7s ease-out;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  
+}
+
+.list a:hover{
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+  
+}
+
+.toggle{
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+.social{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+.social ul li{
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.social ul li a{
+  display: block;
+  padding: 0 5px;
+  background: rgba( 218, 24, 70);
+  color: white;
+  line-height: 30px;
+  font-size: 20px;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0);
+  border-radius: 20px;
+  transition: 0.7s ease-out;
+}
+
+.social ul li a:hover {
+  background: rgba(61, 56, 56, 0.849);
+}
+
+
+@media (max-width: 768px){
+  body{
+     padding-top: 70px 20px 0;
+     
+  }
+
+  /*-----------------HEADER----------------*/
+
+  .title-logo{
+      text-decoration: none;
+  }
+
+  .head{
+      height: 60px;
+  }
+
+  .navmenu{
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb( 218, 24, 70);
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 100%;
+      height: 30%;
+      padding: 20px;
+      margin-left: 0;
+      z-index: 10;
+      left: 100%;
+      transition: left 0.3s;
+  }
+
+  .list{
+      flex-direction: column;
+      height: 10%;
+      margin-bottom: 20px
+  }
+
+  .list a:hover{
+      border-bottom: 1px solid rgb(255, 255, 255);
+      padding-bottom: 10px;
+      color: white;
+      transition: 1s ;
+      
+  }
+
+  .toggle{
+      margin-left: 430px;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+  }
+
+  .navbar{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .visible{
+      left: 0;
+  }
+
+ .social{
+  visibility: hidden;
+ }
+
+ 
+}
+
+
+/* Estilos Portfolio */
+.title {
+  border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
+  margin: 4rem auto 0 auto;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  padding: 0.8rem;
+}
+
+section {
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+section ul {
+  font-family: inherit;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  list-style: none;
+  padding: 0 1.5rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+section ul li.active {
+  color: rgba( 218, 24, 70, 0.849);
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.photo .box .itemBox {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 15px;
+  display: block;
+}
+.photo .box .itemBox.hide {
+  display: none;
+}
+.photo .box .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+.photo .box .itemBox:hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  /* esta transformación es opcional... */
+  transform: scale(1.02);
+  opacity: 40%;
+}
+.photo .box .itemBox .details {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  right: 50px;
+  bottom: 90px;
+  color: white;
+  z-index: -1;
+}
+.photo .box .itemBox:hover .details {
+  z-index: 1;
+}
+.photo .box .itemBox.enlarge img {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  opacity: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.722);
+
+}
+.photo .box .itemBox .details .content {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+}
+.photo .box .itemBox .details .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.photo .box .itemBox .details .content p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 26px;
+  font-weight: 100;
+}
+
+/* FIN Estilos Portfolio */
