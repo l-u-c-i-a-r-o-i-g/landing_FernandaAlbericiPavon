@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: raleway, sans-serif;
 }
@@ -8,31 +9,36 @@ body {
   background-image: url(../imgs/background.png);
   background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1300px;
-  height: 100%;
-  margin-bottom: 100px;
+  background-position: left;
+  background-size: 1100px;
+  height: auto;
 }
 
-/*-----------------HEADER----------------*/
+/*-----------------HEADER - Alejandra O.----------------*/
 
 .head{
   width: 100%;
-  height: 75px;
-  background-color: rgb(212, 2, 82);
-  
+  height: 110px;
+  background-color: rgba(218, 24, 70, 1)
+}
+
+.dropstart{
+  display: none;
 }
 
 .navbar{
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  padding-top: 0.5em;
   align-items: center;
   height: 100%;
   margin: 0 auto;
-  width: max-content;
 }
 
-h1{
+.titleName{
   font-size: 25px;
   padding: 0 40px;
   font-weight: bold;
@@ -40,129 +46,114 @@ h1{
   color: white;
 }
 
-.navmenu{
-  list-style: none;
-  display: flex;
-  padding: 0 250px 0 250px;
-  margin-left: -120px;
-  
-}
 
-.list a{
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 30px;
-  transition: 0.7s ease-out;
-  border-bottom: 3px solid transparent;
-  padding-bottom: 10px;
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  
-}
-
-.list a:hover{
-  border-bottom: 1px solid rgb(255, 255, 255);
-  color: white;
-  
-}
-
-.toggle{
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
-  display: none;
-}
-
-.social{
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  margin-left: -100px;
-}
-
-.social ul li{
+ul li{
+  list-style-type: none;
   display: inline-block;
-  margin: 0 2px;
-  text-align: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  
 }
 
-.social ul li a{
-  display: block;
-  padding: 0 5px;
-  background: rgba(184, 23, 85, 0.849);
+.navmenu li a{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  transition: 0.3s ease-out;
+  color: rgba(0, 0, 0, 1)
+}
+
+.navmenu li a:hover{
   color: white;
-  line-height: 30px;
-  font-size: 20px;
-  box-shadow: 0 3px 5px 0 rgba(0,0,0);
-  border-radius: 20px;
-  transition: 0.7s ease-out;
 }
-
-.social ul li a:hover {
-  background: rgba(61, 56, 56, 0.849);
-}
-
-
-
-/*-----------------SOBRE MI----------------*/
 
 .title-logo{
   text-decoration: none;
 }
 
-.title{
+.titleName{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.navmenu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.sobHover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.navmenu li #sHover{
+  color: #FFFFFF;
+}
+
+.social{
+  min-width: 15em;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+
+.social a{
+  text-decoration: none;
+  font-size: 25px;
+  background: rgba(166, 16, 51, 0.44);
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.social a:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(218, 24, 70, 1);
+} 
+
+/*-----------------SOBRE MI - Alejandra O.----------------*/
+
+.title {
+  border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
+  margin: 1em auto 0 auto;
+  width: 8rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  padding: 0.8rem;
+  white-space: nowrap;
 }
 
-.title::after{
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 470px;
-  width: 70px;
-  height: 3px;
-  background-color: rgb(212, 2, 82);
-}
-
-.title_2{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.title_2::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 725px;
-  width: 120px;
-  height: 3px;
-  background-color: rgb(212, 2, 82);
-}
-
-
-.info_container{
+main{
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 170px;
+  padding-left: 7em;
+  padding-top: 15em;
   margin-bottom: 70px;
 }
 
 #foto{
   border-radius: 200px;
+  margin-bottom: 3em;
 }
 
 .text_container{
-  padding-left: 100px;
+  padding-left: 5em;
 }
 
 .title_sobremi{
@@ -171,258 +162,111 @@ h1{
   width: 70%;
   height: 10%;
   justify-content: flex-start;
-  text-transform: capitalize;
-  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 38px;
+  padding-left: 1.2em;
+}
+
+span{
+  color: rgba( 218, 24, 70, 0.849);
+  padding-left: 0.3em;
 }
 
 .description{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-family: 'Raleway';
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+  margin-right: 2em;
+}
+
+.buttons{
   display: flex;
-  width: 70%;
-  height: 10%;
-  color: white;
-  justify-content: flex-start;
-  text-transform: capitalize;
-  font-size: 15px;
-  font-weight: 200;
-  line-height: 25px;
-  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.container_box{
-  margin-left: 280px;
-  width:400px;
-  height:500px;
-  display:grid;
-  grid-template-columns: 300px 300px;
-  grid-row: auto auto;
-  grid-column-gap: 100px;
-  grid-row-gap: 50px;
+
+.btn1{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 38px;
+  height: 40px;
+  padding: 5px;
 }
-  .box{
-    background-color:transparent;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:flex-start;
-    font-size:40px;
-    font-family:sans-serif;
-    border: 2px solid white;
-  }
 
-  .box_title{
-      font-size: 18px;
-      text-align: center;
-      font-weight: 700;
-  }
+.btn1:hover{
+  color: rgba(0, 0, 0, 1);
+}
 
-  .box_text{
-      font-size: 14px;
-      font-weight: 200;
-      text-align: center;
-      margin-top: 25px;
-      line-height: 22px;
-  }
-
-  #wp{
-      color: white;
-      position: absolute;
-      font-size: 22px;
-      width: 20px;
-      top: 525px;
-      left: 580px;
-      z-index: 10;
-  }
-
-  #mail{
-      color: white;
-      position: absolute;
-      font-size: 22px;
-      width: 20px;
-      top: 525px;
-      left: 810px;
-      z-index: 10;
-  }
-
-@media (max-width: 768px){
-  body{
-      background-image: url(/sobremi/And\ all\ black\ 1.png);
-      background-color: rgb(0, 0, 0);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 2000px;
-      height: 100%;
-      
-  }
-  
-  /*-----------------HEADER----------------*/
-
-
-  .head{
-      height: 60px;
-  }
-
-  h1{
-      font-size: 25px;
-      padding: 0 20px;
-      font-weight: bold;
-      line-height: 60px;
-      color: white;
-  }
-
-  .navmenu{
-      flex-direction: column;
-      align-items: center;
-      background-color: rgb(212, 2, 82);
-      position: absolute;
-      left: 0;
-      top: 60px;
-      width: 100%;
-      height: 30%;
-      padding: 20px;
-      margin-left: 0;
-      z-index: 10;
-
-      left: 100%;
-      transition: left 0.3s;
-  }
-
-  .list{
-      flex-direction: column;
-      height: 10%;
-      margin-bottom: 20px
-  }
-
-  .list a:hover{
-      border-bottom: 1px solid rgb(255, 255, 255);
-      padding-bottom: 10px;
-      color: white;
-      transition: 1s;
-      
-  }
-
-  .toggle{
-      margin-left: 430px;
-      position: absolute;
-      display: block;
-      cursor: pointer;
-  }
-
-  .navbar{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-  }
-
-  .visible{
-      left: 0;
-  }
-
- .social{
-  visibility: hidden;
- }
- 
-
- /*-----------------SOBRE MI----------------*/
-
-
- .title{
+.btnEntero{
   display: flex;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 30px;
+  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(218, 24, 70, 1);
 }
 
-.title::after{
-  content: "";
-  display: block;
+.btnEntero:hover{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.wpp{
+  box-shadow: 0px 3px 4px rgba(147, 147, 147, 0.25);
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+}
+
+.mail{
+  background: #DA1846;
+  border-radius: 5px;
+  width: 353px;
+  height: 42px;
+}
+
+.sobremiFondo{
+  margin-left: 77em;
   position: absolute;
-  bottom: 380px;
-  width: 70px;
-  height: 3px;
-  background-color: rgb(212, 2, 82);
+  z-index: 2;
 }
 
 .title_2{
+  border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
+  margin: 0 auto 2em auto;
+  width: 8rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
-  margin-top: 250px;
-}
-
-.title_2::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 1040px;
-  width: 110px;
-  height: 3px;
-  background-color: rgb(212, 2, 82);
-}
-
-
-.info_container{
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-left: 17px;
-  margin-top: 220px;
-  position: relative;
-}
-
-#foto{
-  border-radius: 200px;
-  width: 200px;
-  margin-bottom: 50px;
-}
-
-
-.title_sobremi{
-  display: flex;
-  color: rgb(255, 255, 255);
-  width: 70%;
-  height: 10%;
-  justify-content: flex-start;
-  align-items: center;
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.description{
-  display: flex;
-  width: 70%;
-  height: 10%;
+  font-size: 40px;
+  font-weight: 800;
   color: white;
-  justify-content: flex-start;
-  text-transform: capitalize;
-  font-size: 15px;
-  font-weight: 200;
-  line-height: 25px;
-  margin-bottom: 60px;
+  white-space: nowrap;
+  z-index: 1;
+  padding-top: 4.5em;
 }
 
 .container_box{
-  width:300px;
-  height:500px;
-  display:flex;
-  flex-direction: column;
-  position: relative;
-  margin-left: 95px;
-  
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  grid-row-gap: 3em;
+  padding-left: 8.5em;
+  padding-right: 1em;
+  margin-bottom: 14em;
 }
-  .box{
+  
+.box{
     background-color:transparent;
-    padding:20px;
-    border-radius:10px;
+    border: 2px solid #4E4E4E;
+    border-radius: 15px;
     color:#fff;
     display:flex;
     flex-direction: column;
@@ -430,60 +274,242 @@ h1{
     justify-content:flex-start;
     font-size:40px;
     font-family:sans-serif;
-    border: 2px solid white;
+    width: 480px;
+    height: 355px;
+  }
+
+  .box:hover{
+    border: 2px solid rgba(218, 24, 70, 1);
+    transition: 0.5s;
   }
 
   .box_title{
-      font-size: 18px;
+      font-size: 30px;
       text-align: center;
       font-weight: 700;
+      padding-top: 1em;
   }
 
   .box_text{
-      font-size: 14px;
-      font-weight: 200;
       text-align: center;
-      margin-top: 25px;
-      line-height: 22px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 25px;
+      line-height: 35px;
+      color:rgba(255, 255, 255, 1);
+      padding-top: 1em;
   }
 
-#btn{
-  position: absolute;
-  top: 520px;
-  margin-right: 40px;
-  min-width: 275px;
+  .b1{
+    width: 409px;
+    height: 236px;
+    left: 214px;
+    top: 1229px;
+  }
+
+  .b2{
+    width: 406px;
+    height: 132px;
+    left: 824px;
+    top: 1260px;
+    padding-top: 1.5em;
+  }
+
+  .b3{
+    width: 410px;
+    height: 187px;
+    left: 215px;
+    top: 1648px;
+    padding-top: 1.5em;
+  }
+
+  .b4{
+    width: 406px;
+    height: 132px;
+    left: 819px;
+    top: 1653px;
+    padding-top: 1.5em;
+  }
+
+  footer{
+    display: none;
+  }
+
+
+  /*Mobile y Tablet*/
+
+  @media only screen and (max-width: 1209px){
+
+    body {
+      background-image: url(../imgs/sobre\ mi\ fondo.png);
+      background-repeat: no-repeat;
+      background-color: rgb(0, 0, 0);
+      background-size: 10%;
+      background-position: right;
+  }
+
+  .navmenu{
+    display: none;
+  }
+
+  .social{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5em;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+  }
+
+  .socialFooter{
+    min-width: 18em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    width: 80%;
+    height: auto;
+    margin-bottom: 70px;
+    margin-right: 0;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnEntero{
+    margin: 1rem;
+  }
+
+  .socialFooter a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: rgba(166, 16, 51, 0.44);
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+  
+  .socialFooter a:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(218, 24, 70, 1);
+  } 
+
+  .dropstart{
+    display: inline;
+    margin-right: 2em;
+  }
+
+  /*SOBRE MI*/
+
+  .title {
+    font-size: 2.5rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    padding: 0.8rem;
+    white-space: nowrap;
+  }
+
+.title_sobremi{
+  width: 100%;
+  height: auto;
 }
 
-#btn2{
-  position: absolute;
-  top: 560px;
-  margin-right: 40px;
-  min-width: 260px;
-}
- 
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
 }
 
 
-.css-button-shadow-border--rose {
-  min-width: 130px;
-  height: 30px;
-  color: #fff;
-  padding: 5px 50px;
-  margin-right: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-  background: #ff0a78;
+  #foto{
+    border-radius: 12rem;
+    width: 10.5rem;
+    height: 10.5rem;
+
+  }
+
+  .container_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 0;
+    margin-bottom: 2em;
+    margin-left: 0;
+  }
+  .box{
+    font-size: 2.5rem;;
+    font-family:sans-serif;
+    width: 90%;
+    height: auto;
+  }
+
+  .box_text{
+    font-size: 1.5rem;
+    width: 95%;
+    height: auto;
 }
-.css-button-shadow-border--rose:hover {
-  background-color: #ff6392;
+
+.title_2{
+  padding-top: 1em;
 }
-.css-button-shadow-border--rose:active {
-  top: 2px;
+
+.text_container{
+  padding: 0;
 }
+
+.btn1{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  line-height: 38px;
+  height: 40px;
+  padding: 5px;
+}
+
+.sobremiFondo{
+  display: none;
+}
+
+.description{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  margin-right: 0;
+}
+
+}
+

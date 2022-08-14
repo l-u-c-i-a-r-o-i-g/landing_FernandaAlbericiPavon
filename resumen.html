@@ -1,141 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/resumen.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/buk2rol.css">    
-    <script src="https://kit.fontawesome.com/5ba74033c9.js" crossorigin="anonymous"></script>
-    <title>Fernanda Alberici - Resumen</title>
-  </head>
-  <body>
-    <header class="head">
-      <nav class="navbar">
-        <a href="index.html" class="title-logo"><h1>Fernanda Alberici</h1></a>
-        <button class="toggle">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/resumen.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/buk2rol.css">
+  <script src="https://kit.fontawesome.com/5ba74033c9.js" crossorigin="anonymous"></script>
+  <title>Fernanda Alberici - Resumen</title>
+</head>
+
+<body>
+  <header class="head">
+    <nav class="navbar">
+      <a href="index.html" class="title-logo">
+        <h1 class="titleName">Fernanda Alberici</h1>
+      </a>
+
+      <!--MENU COMUN-->
+
+      <ul class="navmenu">
+        <li><a href="resumen.html">Resumen</a></li>
+        <li><a href="sobremi.html">Sobre mi</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="social">
+        <a href="https://www.behance.net/falbericipavon" target="_blank" class="fa-brands fa-behance"></a>
+        <a href="https://www.linkedin.com/in/falbericipavon/" target="_blank" class="fa-brands fa-linkedin-in"></a>
+        <a href="https://www.instagram.com/falbericipavon/" target="_blank" class="fa-brands fa-instagram"></a>
+        <a href="https://www.youtube.com/c/FernandaAlbericiPavon" target="_blank" class="fa-brands fa-youtube"></a>
+      </div>
+
+      <!--MENU DESPLEGABLE-->
+
+      <div class="dropstart">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+          aria-expanded="false">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="navmenu">
-          <li class="list"><a href="resumen.html">resumen</a></li>
-          <li class="list"><a href="sobremi.html">sobre mi</a></li>
-          <li class="list">
-            <a href="portfolio.html">portfolio</a>
-          </li>
-          <li class="list"><a href="contacto.html">contacto</a></li>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="resumen.html">Resumen</a></li>
+          <li><a class="dropdown-item" href="sobremi.html">Sobre mi</a></li>
+          <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
         </ul>
-        <div class="social">
-          <ul>
-              <li><a id="face" href=""><i class="fa-brands fa-behance"></i></a></li>
-              <li><a id="twitter" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-              <li><a id="instagram" href=""><i class="fab fa-instagram"></i></a></li>
-              <li><a id="youtube" href=""><i class="fa-brands fa-youtube"></i></a></li>
-          </ul>
       </div>
-      </nav>
-    </header>
-    <!--experience start-->
-    <h1 class="titulo_inicial">Resumen</h1>
-    <div class="container_1">
-      <div class="front">
-        <h2 id="edu">Educación</h2>
-        <h3 class="title_edu">
-          desarrollo frontend react -
-          <p id="guion">Coderhouse</p>
-        </h3>
-        <p id="l1" class="p_edu">
-          Carrera de Desarrollo web con HTML & CSS, utilizando javascript
-          Control de versión de código a través de Git
-        </p>
-        <p class="p2_edu">Mayo 2021 - Marzo 2022</p>
-      </div>
-      <div class="back">
-        <h2 class="title_edu">
-          desarrolladora backend -
-          <p id="guion">Ada Itw</p>
-        </h2>
-        <p id="l2" class="p_edu">
-          Carrera que utiliza herramientas de desarrollo backend como bases de
-          datos en MySQL. Con conocimientos sobre la programación orientada a
-          objetos en java.
-        </p>
-        <p class="p2_edu">Septiembre 2019 - Junio 2020</p>
-      </div>
-      <div class="diseño">
-        <h2 class="title_edu">
-          Licenciatura en diseño multimedia y de interacción -
-          <p id="guion">UADE</p>
-        </h2>
-        <p class="p_edu">
-          Carrera que combina distintas áreas del diseño entre ellas gráfico,
-          web, editorial, videojuegos y audiovisual
-        </p>
-        <p class="p2_edu">Agosto 2011 - Septiembre 2018</p>
-      </div>
-    </div>
-    <div class="container_1">
-      <div class="front">
-        <h2 id="laboral">Experiencia Laboral</h2>
-        <h3 id="l3" class="title_edu">
-          práctica profesional con impacto -
-          <p id="guion">Ada Itw</p>
-        </h3>
-        <p class="p_edu">
-          Desarrollo del sitio web responsivo de una ONG argentina a fin de
-          acercarles ayuda a las personas con consumos problemáticos y a sus
-          familias
-        </p>
-        <p class="p2_edu">Octubre 2021 - Diciembre 2021</p>
-      </div>
-      <div class="back">
-        <h2 class="title_edu">
-          desarrolladora front end -
-          <p id="guion">Hd Broker</p>
-        </h2>
-        <p id="l4" class="p_edu">
-          Freelance. Desarrollo del sitio web e identidad de marcapara la
-          empresa administradora de seguros.
-        </p>
-        <p class="p2_edu">Agosto 2011 - Octubre 2021</p>
-      </div>
-      <div class="diseño">
-        <h2 class="title_edu">
-          Prácticas profesionales -
-          <p id="guion">UADE</p>
-        </h2>
-        <p class="p_edu">
-          Realización de videos institucionales, utilizando After Effects, para
-          la Facultad de Comunicación y Diseño.
-        </p>
-        <p class="p2_edu">Febrero 2013 - Julio 2013</p>
-      </div>
-    </div>
-    <!--tools-->
-    <h1 class="titulo_inicial">Herramientas</h1>
-    <div class="tec_container_dev">
-      <img class="tecs" src="./imgs/Tec/git.png" alt="" />
-      <img class="tecs" src="./imgs/Tec/bootstrap.png" alt="" />
-      <img class="tecs" src="./imgs/Tec/sass.png" alt="" />
-      <img class="tecs" src="./imgs/Tec/html.png" alt="" />
-      <img id="js-tec" class="tecs" src="./imgs/Tec/js.png" alt="" />
-      <img class="tecs" src="./imgs/Tec/css.png" alt="" />
-      <img class="tecs" src="./imgs/Tec/sql.png" alt="" />
-      <img class="tecs" src="./imgs/Tec/java.png" alt="" />
+    </nav>
+
+  </header>
+
+  <!--experience start-->
+  <h1 class="titulo_inicial">Resumen</h1>
+  <div class="container_1">
+
+    <div class="front">
+      <h2 id="edu">Educación</h2>
+      <h3 class="title_edu">
+        Desarrollo Frontend React - &nbsp;
+        <span id="guion"> Coderhouse</span>
+      </h3>
+      <p id="l1" class="p_edu">
+        Carrera de Desarrollo web con HTML & CSS, utilizando Javascript.
+        Control de versión de código a través de Git.
+      </p>
+      <p class="p2_edu">Mayo 2021 - Marzo 2022</p>
     </div>
 
-    <h1 class="titulo_inicial">Otros</h1>
-    <div class="tec_container_diseño">
-      <img class="diseño_img" src="./imgs/Diseño/ai.png" alt="" />
-      <img
-        class="diseño_img"
-        src="/imgs/Diseño/vscode-icons_file-type-photoshop.png"
-        alt=""
-      />
-      <img class="diseño_img" src="./imgs/Diseño/ae.png" alt="" />
-      <img class="diseño_img" src="./imgs/Diseño/pr.png" alt="" />
-      <img class="diseño_img" src="./imgs/Diseño/au.png" alt="" />
+    <div class="back">
+      <h2 class="title_edu">
+        Desarrolladora Backend - &nbsp;
+        <span id="guion"> Ada Itw</span>
+      </h2>
+      <p id="l2" class="p_edu">
+        Carrera que utiliza herramientas de desarrollo backend tales como base de
+        datos en MySQL. Con conocimientos sobre la programación orientada a
+        objetos en Java.
+      </p>
+      <p class="p2_edu">Septiembre 2019 - Junio 2020</p>
     </div>
 
-    <script defer src="./js/resumen.js"></script>
-  </body>
+
+    <div class="diseño">
+      <h2 class="title_edu">
+        Licenciatura en Diseño Multimedia y de Interacción - &nbsp;
+        <span id="guion">UADE</span>
+      </h2>
+      <p class="p_edu">
+        Carrera que combina distintas áreas del diseño entre ellas gráfico,
+        web, editorial, videojuegos y audiovisual.
+      </p>
+      <p class="p2_edu">Agosto 2011 - Septiembre 2018</p>
+    </div>
+  </div>
+
+  <h2 id="laboral">Experiencia Laboral</h2>
+
+  <div class="container_2">
+    <div class="front" id="front2">
+      <h3 id="l3" class="title_edu">
+        Práctica Profesional con Impacto - &nbsp;
+        <span id="guion"> Ada Itw</span>
+      </h3>
+      <p class="p_edu">
+        Desarrollo del sitio web responsivo de una ONG argentina a fin de
+        acercarles ayuda a las personas con consumos problemáticos y a sus
+        familias.
+      </p>
+      <p class="p2_edu">Octubre 2021 - Diciembre 2021</p>
+    </div>
+
+    <div class="back">
+      <h2 class="title_edu">
+        Desarrolladora Front End - &nbsp;
+        <span id="guion"> Hd Broker</span>
+      </h2>
+      <p id="l4" class="p_edu">
+        Freelance. Desarrollo del sitio web e identidad de marca para la
+        empresa administradora de seguros.
+      </p>
+      <p class="p2_edu">Agosto 2011 - Octubre 2021</p>
+    </div>
+
+    <div class="diseño">
+      <h2 class="title_edu">
+        Prácticas Profesionales - &nbsp;
+        <span id="guion">UADE</span>
+      </h2>
+      <p class="p_edu">
+        Realización de videos institucionales, utilizando After Effects, para
+        la Facultad de Comunicación y Diseño.
+      </p>
+      <p class="p2_edu">Febrero 2013 - Julio 2013</p>
+    </div>
+  </div>
+
+  <!--tools-->
+  <h1 class="titulo_dos">Herramientas</h1>
+  <div class="tec_container_dev">
+    <img class="git herr" src="./imgs/Tec/git.png" alt="" />
+    <img class="boot herr" src="./imgs/Tec/bootstrap.png" alt="" />
+    <img class="sass herr" src="./imgs/Tec/sass.png" alt="" />
+    <img class="htmlLogo herr" src="./imgs/Tec/html.png" alt="" />
+    <img id="js" class="tecs herr" src="./imgs/Tec/js.png" alt="" />
+    <img class="css herr" src="./imgs/Tec/css.png" alt="" />
+    <img class="sql herr" src="./imgs/Tec/sql.png" alt="" />
+    <img class="java herr" src="./imgs/Tec/java.png" alt="" />
+  </div>
+
+  <h1 class="titulo_tres">Otros</h1>
+  <div class="tec_container_diseño">
+    <img class="diseño_img" src="./imgs/Diseño/ai.png" alt="" />
+    <img class="diseño_img" src="./imgs/Diseño/ps.png" alt="">
+    <img class="diseño_img" src="./imgs/Diseño/ae.png" alt="" />
+    <img class="diseño_img" src="./imgs/Diseño/pr.png" alt="" />
+    <img class="diseño_img" src="./imgs/Diseño/au.png" alt="" />
+  </div>
+
+  <footer>
+    <div class="socialFooter">
+      <a href="https://www.behance.net/falbericipavon" target="_blank" class="fa-brands fa-behance"></a>
+      <a href="https://www.linkedin.com/in/falbericipavon/" target="_blank" class="fa-brands fa-linkedin-in"></a>
+      <a href="https://www.instagram.com/falbericipavon/" target="_blank" class="fa-brands fa-instagram"></a>
+      <a href="https://www.youtube.com/c/FernandaAlbericiPavon" target="_blank" class="fa-brands fa-youtube"></a>
+    </div>
+  </footer>
+
+  <script defer src="./js/resumen.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
