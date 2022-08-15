@@ -4,7 +4,7 @@ Faltantes:
 
 Nav:
 
-    Revisar en portfolio
+    Revisar en portfolio 
 
 Home:
 
