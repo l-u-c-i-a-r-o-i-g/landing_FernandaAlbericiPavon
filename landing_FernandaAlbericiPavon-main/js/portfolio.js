@@ -1,10 +1,4 @@
-// navbar:
-const toggle = document.querySelector(".toggle")
-const navmenu = document.querySelector(".navmenu")
 
-toggle.addEventListener("click", () => {
-    navmenu.classList.toggle("visible");
-});
 
 // :::: JS Portfolio ::::
 let list = document.querySelectorAll(".list_filter");
@@ -37,3 +31,11 @@ itemBox.forEach(popup =>popup.addEventListener("click",()=>
 }
 ))
 // :::: FIN JS Portfolio ::::
+
+// navbar:
+const toggle = document.querySelector(".toggle")
+const navmenu = document.querySelector(".navmenu")
+
+toggle.addEventListener("click", () => {
+    navmenu.classList.toggle("visible");
+});

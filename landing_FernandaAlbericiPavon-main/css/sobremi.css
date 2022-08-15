@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: raleway, sans-serif;
+}
+
+body {
+  background-image: url(../imgs/background.png);
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1100px;
+  height: auto;
+}
+
+/*-----------------HEADER - Alejandra O.----------------*/
+
+.head{
+  width: 100%;
+  height: 110px;
+  background-color: rgba(218, 24, 70, 1)
+}
+
+.dropstart{
+  display: none;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.titleName{
+  font-size: 25px;
+  padding: 0 40px;
+  font-weight: bold;
+  line-height: 80px;
+  color: white;
+}
+
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  
+}
+
+.navmenu li a{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  transition: 0.3s ease-out;
+  color: rgba(0, 0, 0, 1)
+}
+
+.navmenu li a:hover{
+  color: white;
+}
+
+.title-logo{
+  text-decoration: none;
+}
+
+.titleName{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.navmenu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.sobHover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.navmenu li #sHover{
+  color: #FFFFFF;
+}
+
+.social{
+  min-width: 15em;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+
+.social a{
+  text-decoration: none;
+  font-size: 25px;
+  background: rgba(166, 16, 51, 0.44);
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.social a:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(218, 24, 70, 1);
+} 
+
+/*-----------------SOBRE MI - Alejandra O.----------------*/
+
+.title {
+  border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
+  margin: 1em auto 0 auto;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  padding: 0.8rem;
+  white-space: nowrap;
+}
+
+main{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7em;
+  padding-top: 15em;
+  margin-bottom: 70px;
+}
+
+#foto{
+  border-radius: 200px;
+  margin-bottom: 3em;
+}
+
+.text_container{
+  padding-left: 5em;
+}
+
+.title_sobremi{
+  display: flex;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  height: 10%;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 38px;
+  padding-left: 1.2em;
+}
+
+span{
+  color: rgba( 218, 24, 70, 0.849);
+  padding-left: 0.3em;
+}
+
+.description{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-family: 'Raleway';
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+  margin-right: 2em;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.btn1{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 38px;
+  height: 40px;
+  padding: 5px;
+}
+
+.btn1:hover{
+  color: rgba(0, 0, 0, 1);
+}
+
+.btnEntero{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(218, 24, 70, 1);
+}
+
+.btnEntero:hover{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.wpp{
+  box-shadow: 0px 3px 4px rgba(147, 147, 147, 0.25);
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+}
+
+.mail{
+  background: #DA1846;
+  border-radius: 5px;
+  width: 353px;
+  height: 42px;
+}
+
+.sobremiFondo{
+  margin-left: 77em;
+  position: absolute;
+  z-index: 2;
+}
+
+.title_2{
+  border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
+  margin: 0 auto 2em auto;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  white-space: nowrap;
+  z-index: 1;
+  padding-top: 4.5em;
+}
+
+.container_box{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  grid-row-gap: 3em;
+  padding-left: 8.5em;
+  padding-right: 1em;
+  margin-bottom: 14em;
+}
+  
+.box{
+    background-color:transparent;
+    border: 2px solid #4E4E4E;
+    border-radius: 15px;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+    font-size:40px;
+    font-family:sans-serif;
+    width: 480px;
+    height: 355px;
+  }
+
+  .box:hover{
+    border: 2px solid rgba(218, 24, 70, 1);
+    transition: 0.5s;
+  }
+
+  .box_title{
+      font-size: 30px;
+      text-align: center;
+      font-weight: 700;
+      padding-top: 1em;
+  }
+
+  .box_text{
+      text-align: center;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 25px;
+      line-height: 35px;
+      color:rgba(255, 255, 255, 1);
+      padding-top: 1em;
+  }
+
+  .b1{
+    width: 409px;
+    height: 236px;
+    left: 214px;
+    top: 1229px;
+  }
+
+  .b2{
+    width: 406px;
+    height: 132px;
+    left: 824px;
+    top: 1260px;
+    padding-top: 1.5em;
+  }
+
+  .b3{
+    width: 410px;
+    height: 187px;
+    left: 215px;
+    top: 1648px;
+    padding-top: 1.5em;
+  }
+
+  .b4{
+    width: 406px;
+    height: 132px;
+    left: 819px;
+    top: 1653px;
+    padding-top: 1.5em;
+  }
+
+  footer{
+    display: none;
+  }
+
+
+  /*Mobile y Tablet*/
+
+  @media only screen and (max-width: 1209px){
+
+    body {
+      background-image: url(../imgs/sobre\ mi\ fondo.png);
+      background-repeat: no-repeat;
+      background-color: rgb(0, 0, 0);
+      background-size: 10%;
+      background-position: right;
+  }
+
+  .navmenu{
+    display: none;
+  }
+
+  .social{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5em;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+  }
+
+  .socialFooter{
+    min-width: 18em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    width: 80%;
+    height: auto;
+    margin-bottom: 70px;
+    margin-right: 0;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnEntero{
+    margin: 1rem;
+  }
+
+  .socialFooter a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: rgba(166, 16, 51, 0.44);
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
+  
+  .socialFooter a:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(218, 24, 70, 1);
+  } 
+
+  .dropstart{
+    display: inline;
+    margin-right: 2em;
+  }
+
+  /*SOBRE MI*/
+
+  .title {
+    font-size: 2.5rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    padding: 0.8rem;
+    white-space: nowrap;
+  }
+
+.title_sobremi{
+  width: 100%;
+  height: auto;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+}
+
+
+  #foto{
+    border-radius: 12rem;
+    width: 10.5rem;
+    height: 10.5rem;
+
+  }
+
+  .container_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 0;
+    margin-bottom: 2em;
+    margin-left: 0;
+  }
+  .box{
+    font-size: 2.5rem;;
+    font-family:sans-serif;
+    width: 90%;
+    height: auto;
+  }
+
+  .box_text{
+    font-size: 1.5rem;
+    width: 95%;
+    height: auto;
+}
+
+.title_2{
+  padding-top: 1em;
+}
+
+.text_container{
+  padding: 0;
+}
+
+.btn1{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  line-height: 38px;
+  height: 40px;
+  padding: 5px;
+}
+
+.sobremiFondo{
+  display: none;
+}
+
+.description{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  margin-right: 0;
+}
+
+}
+

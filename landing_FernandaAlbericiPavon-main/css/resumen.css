@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: raleway, sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  background-image: url(../imgs/resumen.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+footer{
+  display: none;
+}
+
+.dropstart{
+  display: none;
+}
+
+/*-----------------HEADER----------------*/
+.head{
+  width: 100%;
+  height: 110px;
+  background-color: rgba(218, 24, 70, 1)
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  
+}
+
+.navmenu li a{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  transition: 0.3s ease-out;
+  color: rgba(0, 0, 0, 1)
+}
+
+.navmenu li a:hover{
+  color: white;
+}
+
+.title-logo{
+  text-decoration: none;
+}
+
+.titleName{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+h1{
+  font-size: 25px;
+  padding: 0 40px;
+  font-weight: bold;
+  line-height: 80px;
+  color: white;
+}
+
+.navmenu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.resHover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.navmenu li #rHover{
+  color: #FFFFFF;
+}
+
+.social{
+  min-width: 15em;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+}
+
+.social a{
+  text-decoration: none;
+  font-size: 25px;
+  background: rgba(166, 16, 51, 0.44);
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.social a:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(218, 24, 70, 1);
+} 
+
+
+
+/*-----------------EXPERIENCIA - Alejandra Ortega----------------*/
+
+.titulo_inicial, .titulo_dos, .titulo_tres{
+  border-bottom: 2px solid rgba( 218, 24, 70, 0.849);
+  margin: 4rem auto 1rem auto;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  padding: 12px 12px 0.5em 12px;
+  line-height: 25px;
+  }
+
+
+  .titulo_dos{
+    margin-top: 5em;
+    font-size: 30px;
+    margin-bottom: 2em;
+  }
+
+
+.titulo_tres{
+  font-size: 30px;
+  margin-bottom: 2em;
+}
+
+
+#edu{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+  margin-left: 12.1%;
+}
+
+#laboral{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 12.1%;
+  margin-bottom: 1em;
+  margin-top: 7em;
+}
+
+.container_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  height: auto;
+  margin-bottom: 135px;
+}
+
+.container_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  height: auto;
+}
+
+.front{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  line-height: 25px;
+}
+
+.back{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  margin-bottom: 4.5em;
+}
+
+
+#front2{
+  margin-bottom: 4em;
+}
+
+.title_edu{
+  display: inline-block;
+  color: rgba(218, 24, 70, 1);
+  height: auto;
+  font-weight: 600;
+  font-size: 3vh;
+  margin-bottom: 0%;
+  margin-left: 15%;
+}
+
+
+.title_edu::before{
+  content: "";
+  width: 18px;
+  height: 19.11px;
+  background-color: rgba(218, 24, 70, 1);
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 3px;
+  left: 12%;
+  
+}
+
+#l1::before{
+  content: "";
+  width: 1px;
+  height: 65%;
+  background-color: rgba(218, 24, 70, 1);
+  position: absolute;
+  margin-top: -1.2vh;
+  margin-left: 0.2em;
+  left: 12.3%;
+}
+
+#l3::after{
+  content: "";
+  width: 1px;
+  height: 65%;
+  background-color: rgba(218, 24, 70, 1);
+  position: absolute;
+  margin-left: 0.2em;
+  left: 12.3%;
+  margin-top: 1vh;
+}
+
+.p_edu{
+  display: flex;
+  width: 90%;
+  height: auto;
+  color: white;
+  justify-content: flex-start;
+  font-size: 3vh;
+  line-height: 25px;
+  margin-left: 15%;
+  margin-bottom: 0%;
+  margin-right: 5%;
+}
+
+.p2_edu{
+  display: flex;
+  font-style: italic;
+  width: 70%;
+  height: 10%;
+  color: rgba(120, 120, 120, 1);
+  justify-content: flex-start;
+  font-size: 3vh;
+  line-height: 25px;
+  margin-left: 15%;
+}
+
+#guion{
+  color: white;
+  margin-bottom: 0%;
+}
+
+
+.diseño{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  margin-bottom: -60px;
+}
+
+/*-----------------HERRAMIENTAS----------------*/
+
+.git{
+  width: 5em;
+  height: auto;
+  margin: 1%;
+}
+
+.boot{
+  width: 5em;
+  height: auto;
+  margin: 1%;
+}
+
+.sass{
+  width: 6.6em;
+  height: auto;
+  margin: 1%;
+}
+
+.htmlLogo{
+  width: 66px;
+  height: auto;
+  margin: 1%;
+}
+
+.js{
+  width: 155px;
+  height: auto;
+  margin: 1%;
+}
+
+.css{
+  width: 71px;
+  height: auto;
+  margin: 1%;
+}
+
+.sql{
+  width: 124px;
+  height:auto;
+  margin: 1%;
+}
+
+.java{
+  width: 8em;
+  height: auto;
+  margin: 1% 1% 1% 0;
+}
+
+.tec_container_dev{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.tec_container_diseño{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12em;
+  width: 70%;
+  height: auto;
+  margin-left: 15.5%;
+}
+
+.diseño_img{
+  height: auto;
+  width: 5em;
+  padding: 0.5em;
+}
+
+
+  /*Mobile y Tablet*/
+
+  
+  @media only screen and (max-width: 1209px){
+    
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5em;
+  background-color: rgb(0, 0, 0);
+  justify-content: space-evenly;
+  align-items: center;
+  bottom: 0;
+}
+
+.socialFooter{
+  min-width: 18em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.navmenu{
+  display: none;
+}
+
+.social{
+  display: none;
+}
+
+.socialFooter{
+  min-width: 18em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialFooter a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  background: rgba(166, 16, 51, 0.44);
+  width: 2.8rem;
+  height: 2.8rem;
+  text-align: center;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.socialFooter a:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(218, 24, 70, 1);
+} 
+
+.dropstart{
+  display: inline;
+  margin-right: 2em;
+}
+
+.p_edu, .title_edu, .p2_edu{
+  font-size: 1rem;
+  padding-left: 1rem;
+
+}
+
+.titulo_inicial{
+  font-size: 2rem;
+}
+
+#edu{
+  font-size: 1.5rem;
+}
+
+.herr{
+  height: 3rem;
+  width: auto;
+}
+
+}
