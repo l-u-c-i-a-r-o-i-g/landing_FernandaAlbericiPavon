@@ -4,10 +4,7 @@ Faltantes:
 
 Nav:
 
-    No es responsive
-    El color debe ser rgb(218, 24, 70) (todos los rojos deben tener este valor);
-    Modificar los subrayados en hover
-    Modificar tamaño de tipografía
+    Revisar en portfolio
 
 Home:
 
