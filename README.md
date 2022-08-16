@@ -1,34 +1,19 @@
-Sitio Web desarrollado para Fernanda Alberici Pavón
 
-Faltantes:
+<h2 align="center">Portfolio Web desarrollado para Fernanda Alberici Pavón</h2>
 
-Nav:
+<h3 align="left">Trabajo freelance realizado por: </h3>
 
-    Revisar en portfolio 
+<p align="left">
 
-Home:
+* Diseño UX >>> Paula Beneite https://www.behance.net/paulabeneite
 
-    Centrar texto de home con el nav.
-    Fondo del home no se ve
-    Sacar sombra interna al boton de "conoceme" y cambiar por "Conoceme mas"
-    El color del boton y subrayados iguales al nav (el boton conoceme esta rosa)
+* "Nav" + "Home" + "Resumen" + "Sobre mi" >>> Desarrollado en HTML, CSS Alejandra Ortega Bauer https://github.com/AlejandraOrtegaBauer
 
-Resumen:
+* Portfolio + Contacto + Form-Popup >>> Desarrollado en HTML, CSS + Programación en JavaScript 
+Lucía Roig Seigneur https://github.com/l-u-c-i-a-r-o-i-g 
 
-    Subrayar "Resumen" (título) y "Herramientas"
-    Centrar
-    Revisar tamaño tipografico de "resumen" , "educación" "herramientas" y " experiencia"
-    Los meses/años van en italic (cursiva)
+</p>
 
-Sobre mi:
 
-    Centrar todo
-    Bajar un poco el Sobre mi, esta muy pegado al nav.
-    Color a "Fernanda Alberici"
-    Sacar sombra interna a los botones
-    Acomodar iconos dentro de botones (whatsapp y mail)
-    Cambiar color a los botones
-    Modificar ancho de linea de subrayado de "Sobre Mi" y "Mis Servicios"
-    El hover de los botones de whastapp y el mail cambiar a blanco opaco / letra a negro
-    Falta el hover de los bordes en los servicios
-    Modificar tamaños en recuadros de servicios y en los textos
+<h4 align="left">Lenguajes y herramientas utilizadas:</h4>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
