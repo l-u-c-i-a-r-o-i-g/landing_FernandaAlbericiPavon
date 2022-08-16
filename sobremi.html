@@ -1,144 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/sobremi.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/buk2rol.css">
-  <script src="https://kit.fontawesome.com/5ba74033c9.js" crossorigin="anonymous"></script>
-  <title>Fernanda Alberici - Sobre Mi</title>
-</head>
-
-<body>
-  <header class="head">
-    <nav class="navbar">
-      <a href="index.html" class="title-logo">
-        <h1 class="titleName">Fernanda Alberici</h1>
-      </a>
-
-      <!--MENU COMUN-->
-
-      <ul class="navmenu">
-        <li><a href="resumen.html">Resumen</a></li>
-        <li><a href="sobremi.html">Sobre mi</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-
-      <div class="social">
-        <a href="https://www.behance.net/falbericipavon" target="_blank" class="fa-brands fa-behance"></a>
-        <a href="https://www.linkedin.com/in/falbericipavon/" target="_blank" class="fa-brands fa-linkedin-in"></a>
-        <a href="https://www.instagram.com/falbericipavon/" target="_blank" class="fa-brands fa-instagram"></a>
-        <a href="https://www.youtube.com/c/FernandaAlbericiPavon" target="_blank" class="fa-brands fa-youtube"></a>
-      </div>
-
-      <!--MENU DESPLEGABLE-->
-
-      <div class="dropstart">
-        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-          aria-expanded="false">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/sobremi.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/buk2rol.css">    
+    <script src="https://kit.fontawesome.com/5ba74033c9.js" crossorigin="anonymous"></script>
+    <title>Fernanda Alberici - Sobre Mi</title>
+  </head>
+  <body>
+    <header class="head">
+      <nav class="navbar">
+        <a href="index.html" class="title-logo"><h1>Fernanda Alberici</h1></a>
+        <button class="toggle">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="resumen.html">Resumen</a></li>
-          <li><a class="dropdown-item" href="sobremi.html">Sobre mi</a></li>
-          <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
-          <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+        <ul class="navmenu">
+          <li class="list"><a href="resumen.html">resumen</a></li>
+          <li class="list"><a href="sobremi.html">sobre mi</a></li>
+          <li class="list">
+            <a href="portfolio.html">portfolio</a>
+          </li>
+          <li class="list"><a href="contacto.html">contacto</a></li>
         </ul>
+        <div class="social">
+          <ul>
+              <li><a id="face" href=""><i class="fa-brands fa-behance"></i></a></li>
+              <li><a id="twitter" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a id="instagram" href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a id="youtube" href=""><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
       </div>
-    </nav>
-
-  </header>
-
-  <!--sobre mi-->
-
-  <h2 class="title">Sobre mi</h2>
-
-  <main class="info_container">
-    <img id="foto" src="./imgs/20210101_015837 1.png" alt="" class="img-principal" />
-    <div class="text_container">
-      <h2 class="title_sobremi">Hola, soy <span>Fernanda Alberici.</span></h2>
-      <p class="description">
-        Me apasiona el diseño desde niña. Soy de Buenos Aires, donde obtuve mi
-        licenciatura como diseñadora Multimedial y de Interacción. <br>
-      </p>
-      <p class="description">
-        Mi proceso de trabajo es definir, investigar y diseñar conceptos
-        basados en la simplicidad. Me gusta dar vida a personajes, animar y
-        presentar emociones <br> a través de la ilustración vectorial. Mi otra
-        pasión es el desarrollo web y el diseño gráfico, me encanta crear através
-        de la combinación de imágenes y textos.
-      </p>
-
-      <div class="buttons">
-        <div class="wpp btnEntero">
-          <a href="https://wa.me/541131154419" class="btn1 btn-number fa-brands fa-whatsapp"> (011) 3115 - 4419</a>
-        </div>
-        <div class="mail btnEntero">
-          <a href="mailto:faalbericipavon@gmail.com" class="btn1 btn-mail fa-regular fa-envelope">
-            faalbericipavon@gmail.com</a>
-        </div>
+      </nav>
+    </header>
+    <!--sobre mi-->
+    <h1 class="title">Sobre mi</h1>
+    <div class="info_container">
+      <img
+        id="foto"
+        src="./imgs/20210101_015837 1.png"
+        alt=""
+        width="300px"
+        height="300px"
+      />
+      <div class="text_container">
+        <h2 class="title_sobremi">hola, soy fernanda alberici</h2>
+        <p class="description">
+          Me apasiona el diseño desde niña. Soy de Buenos Aires, donde obtuve mi
+          licenciatura como diseñadora Multimedial y de interacción.
+        </p>
+        <p class="description">
+          Mi proceso de trabajo es definir, investigary diseñar conceptos
+          basados en la simplicidad. Megusta dar vida a personajes, animar y
+          presentar emociones a través de la ilustración vectorial. Mi otra
+          pasión es el desarrollo web y diseño gráfico, me encanta crear através
+          de la combinación de imágenes y textos.
+        </p>
+        <button id="btn" class="css-button-shadow-border--rose">
+          (011) 3115 - 4419
+        </button>
+        <i id="wp" class="fa-brands fa-whatsapp"></i>
+        <button id="btn2" class="css-button-shadow-border--rose">
+          faalbericipavon@gmail.com
+        </button>
+        <i id="mail" class="fa-solid fa-envelope"></i>
       </div>
-  </main>
-
-
-
-  <!---Mis Servicios-->
-  <div class="divTitle2">
+    </div>
     <h1 class="title_2">Mis servicios</h1>
-  </div>
-
-  <img class="sobremiFondo" src="./imgs/sobre mi fondo.png" alt="">
-
-  <div class="container_box">
-    <div class="box">
-      <h2 class="box_title">Desarrollo web</h2>
-      <p class="box_text b1">
-        Sitios Institucionales. Landing Pages adaptables a todas las
-        pantallas. Diseños de páginas claras, atractivas y efectivas que te ayudarán a dar la mejor imagen para tu
-        negocio.
-      </p>
+    <div class="container_box">
+      <div class="box">
+        <h2 class="box_title">Desarrollo web</h2>
+        <p class="box_text">
+          Sitios Institucionales. Landing Pages adaptables a todas las
+          pantallas. Diseños de páginas claras, atractivas y efectivas que te
+          ayudarán a dar la mejor imagen para tu negocio
+        </p>
+      </div>
+      <div class="box">
+        <h2 class="box_title">Alojamiento Web y Correos</h2>
+        <p class="box_text">
+          Hosting, certificados SSL y dominio de páginas web. Cuentas de email
+          corporativo. Asegurando su confiabilidad y respaldo
+        </p>
+      </div>
+      <div class="box">
+        <h2 class="box_title">Ilustración</h2>
+        <p class="box_text">
+          Vectores para logos, invitaciones y educativos. Creación de personajes
+          estilo Kawaii y elaboración diferentes fondos adaptados a la estética
+          que necesites.
+        </p>
+      </div>
+      <div class="box">
+        <h2 class="box_title">Edición de videos</h2>
+        <p class="box_text">
+          Diseño de piezas audiovisuales para eventos, publicidad, juegos o
+          promoción de productos. Edición de fotos, vectores y sonidos
+        </p>
+      </div>
     </div>
-    <div class="box">
-      <h2 class="box_title">Alojamiento Web y Correos</h2>
-      <p class="box_text b2">
-        Hosting, certificados SSL y dominio de páginas web. Cuentas de email corporativo. Asegurando su confiabilidad y
-        respaldo.
-      </p>
-    </div>
-    <div class="box">
-      <h2 class="box_title">Ilustración</h2>
-      <p class="box_text b3">
-        Vectores para logos, invitaciones y educativos. Creación de personajes estilo Kawaii y elaboración diferentes
-        fondos adaptados a la estética que necesites.
-      </p>
-    </div>
-    <div class="box">
-      <h2 class="box_title">Edición de videos</h2>
-      <p class="box_text b4">
-        Diseño de piezas audiovisuales para eventos, publicidad, juegos o promoción de productos. Edición de fotos,
-        vectores y sonidos.
-      </p>
-    </div>
-  </div>
 
-  <footer>
-    <div class="socialFooter">
-      <a href="https://www.behance.net/falbericipavon" target="_blank" class="fa-brands fa-behance"></a>
-      <a href="https://www.linkedin.com/in/falbericipavon/" target="_blank" class="fa-brands fa-linkedin-in"></a>
-      <a href="https://www.instagram.com/falbericipavon/" target="_blank" class="fa-brands fa-instagram"></a>
-      <a href="https://www.youtube.com/c/FernandaAlbericiPavon" target="_blank" class="fa-brands fa-youtube"></a>
-    </div>
-  </footer>
-
-  <script defer src="./js/resumen.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-</body>
-
+    <script defer src="./js/resumen.js"></script>
+  </body>
 </html>
