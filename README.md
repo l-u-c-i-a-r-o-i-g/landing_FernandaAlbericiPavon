@@ -7,7 +7,7 @@
 
 * Diseño UX >>> Paula Beneite https://www.behance.net/paulabeneite 
 
-* Desarrollo en HTML, CSS ("Nav" + "Home" + "Resumen" + "Sobre mi") >>> Alejandra Ortega Bauer https://github.com/AlejandraOrtegaBauer
+* Desarrollo en HTML, CSS (Nav + Home + Resumen + Sobre mi) >>> Alejandra Ortega Bauer https://github.com/AlejandraOrtegaBauer
 
 * Desarrollo en HTML, CSS + Programación en JavaScript (Portfolio + Contacto + Form-Popup) >>> Lucía Roig Seigneur https://github.com/l-u-c-i-a-r-o-i-g 
 
