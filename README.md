@@ -5,13 +5,11 @@
 
 <p align="left">
 
-*
-<img src="https://i.ibb.co/FhffHP7/ux.png" alt="ux icon" width="30" height="30"/> Diseño UX >>> Paula Beneite https://www.behance.net/paulabeneite 
+* Diseño UX >>> Paula Beneite https://www.behance.net/paulabeneite 
 
-<img src="https://i.ibb.co/x6KK8Tw/frontend.png" alt="ux icon" width="30" height="30"/> "Nav" + "Home" + "Resumen" + "Sobre mi" >>> Desarrollado en HTML, CSS Alejandra Ortega Bauer https://github.com/AlejandraOrtegaBauer
+* Desarrollo en HTML, CSS ("Nav" + "Home" + "Resumen" + "Sobre mi") >>> Alejandra Ortega Bauer https://github.com/AlejandraOrtegaBauer
 
-<img src="https://i.ibb.co/x6KK8Tw/frontend.png" alt="ux icon" width="30" height="30"/> Portfolio + Contacto + Form-Popup >>> Desarrollado en HTML, CSS + Programación en JavaScript 
-Lucía Roig Seigneur https://github.com/l-u-c-i-a-r-o-i-g 
+* Desarrollo en HTML, CSS + Programación en JavaScript (Portfolio + Contacto + Form-Popup) >>> Lucía Roig Seigneur https://github.com/l-u-c-i-a-r-o-i-g 
 
 </p>
 
