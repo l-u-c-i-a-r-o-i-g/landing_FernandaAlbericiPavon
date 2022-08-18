@@ -12,6 +12,7 @@ body {
   background-position: left;
   background-size: 1100px;
   height: auto;
+  position: inherit;
 }
 
 /*-----------------HEADER - Alejandra O.----------------*/
@@ -129,7 +130,7 @@ ul li{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
   color: white;
   padding: 0.8rem;
@@ -140,9 +141,9 @@ main{
   width: 100%;
   height: 400px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding-left: 7em;
+  padding-left: 3em;
   padding-top: 15em;
   margin-bottom: 70px;
 }
@@ -150,10 +151,17 @@ main{
 #foto{
   border-radius: 200px;
   margin-bottom: 3em;
+  width: 23.5rem;
+  height: auto;
 }
 
+
 .text_container{
-  padding-left: 5em;
+  width: 51rem;
+  margin-left: 4.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .title_sobremi{
@@ -163,9 +171,8 @@ main{
   height: 10%;
   justify-content: flex-start;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.56rem;
   line-height: 38px;
-  padding-left: 1.2em;
 }
 
 span{
@@ -176,29 +183,36 @@ span{
 .description{
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.37rem;
   line-height: 38px;
   color: rgba(255, 255, 255, 1);
   text-align: left;
   font-family: 'Raleway';
   margin-bottom: 1.5em;
-  padding-left: 1.5em;
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 .buttons{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 90%;
+  padding-left: 1rem;
 }
 
+.btnEntero p{
+  font-family: 'Alata', sans-serif;
+  font-size: 1.37rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 0%;
+}
 
 .btn1{
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.9rem;
   color: rgba(255, 255, 255, 1);
   line-height: 38px;
-  height: 40px;
+  height: 2.5rem;
   padding: 5px;
 }
 
@@ -208,7 +222,7 @@ span{
 
 .btnEntero{
   display: flex;
-  align-items: baseline;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   background-color: rgba(218, 24, 70, 1);
@@ -221,21 +235,20 @@ span{
 .wpp{
   box-shadow: 0px 3px 4px rgba(147, 147, 147, 0.25);
   border-radius: 5px;
-  width: 250px;
-  height: 40px;
+  width: 15.80rem;
+  height: 2.5rem;
 }
 
 .mail{
   background: #DA1846;
   border-radius: 5px;
-  width: 353px;
-  height: 42px;
+  width: 22rem;
+  height: 2.62rem;
 }
 
 .sobremiFondo{
-  margin-left: 77em;
   position: absolute;
-  z-index: 2;
+  left: calc(91.5% - 5px);
 }
 
 .title_2{
@@ -255,12 +268,17 @@ span{
 
 .container_box{
   display:grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-row: auto auto;
   grid-row-gap: 3em;
-  padding-left: 8.5em;
-  padding-right: 1em;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 14em;
+  place-items: center;
+  z-index: -10;
+  padding-left: 5em;
+  padding-right: 5em;
 }
   
 .box{
@@ -274,7 +292,7 @@ span{
     justify-content:flex-start;
     font-size:40px;
     font-family:sans-serif;
-    width: 480px;
+    width: 30.31rem;
     height: 355px;
   }
 
@@ -284,7 +302,7 @@ span{
   }
 
   .box_title{
-      font-size: 30px;
+      font-size: 1.87rem;
       text-align: center;
       font-weight: 700;
       padding-top: 1em;
@@ -295,7 +313,7 @@ span{
       font-family: 'Raleway';
       font-style: normal;
       font-weight: lighter;
-      font-size: 25px;
+      font-size: 1.56rem;
       line-height: 35px;
       color:rgba(255, 255, 255, 1);
       padding-top: 1em;
@@ -342,7 +360,7 @@ span{
   @media only screen and (max-width: 1209px){
 
     body {
-      background-image: url(../imgs/sobre\ mi\ fondo.png);
+      background-image: none;
       background-repeat: no-repeat;
       background-color: rgb(0, 0, 0);
       background-size: 10%;
@@ -461,17 +479,17 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    place-items: center;
+    width: 100%;
     height: auto;
-    padding-left: 1em;
-    padding-right: 0;
+    padding: 1em;
     margin-bottom: 2em;
     margin-left: 0;
   }
   .box{
-    font-size: 2.5rem;;
+    font-size: 2rem;;
     font-family:sans-serif;
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 
@@ -504,9 +522,8 @@ main{
 .description{
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 1.5em;
-  padding-left: 1.5em;
   padding-right: 1em;
   margin-right: 0;
 }

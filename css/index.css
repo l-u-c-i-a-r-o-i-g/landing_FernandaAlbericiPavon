@@ -12,6 +12,7 @@ body {
   background-position: right;
   background-size: 770px;
   height: auto;
+  width: 100%;
 }
 
 
@@ -68,7 +69,7 @@ ul li{
 }
 
 h1{
-  font-size: 25px;
+  font-size: 1.56rem;
   padding: 0 40px;
   font-weight: bold;
   line-height: 80px;
@@ -131,20 +132,20 @@ h1{
 }
 
 .presentacion h1{
-  font-size: 35px;
+  font-size: 1.87rem;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 2.81rem;
   padding-top: 3.4em;
 }
 
 .presentacion p{
-  font-size: 35px;
+  font-size: 1.87rem;
   font-weight: 500;
   padding-left: 40px;
   padding-top: 33px;
   color: #FFFFFF;
   font-weight: 100;
-  line-height: 45px;
+  line-height: 2.81rem;
 }
 
 .img-fer{
@@ -179,7 +180,7 @@ h1{
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1.56rem;
   line-height: 29px;
   padding: 16px 32px 16px 32px;
 } 
@@ -205,6 +206,7 @@ footer{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    padding-bottom: 40%;
     background-color: rgb(0, 0, 0);
     height: auto;
   }
@@ -226,6 +228,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     bottom: 0;
+    position: fixed;
   }
 
   .socialFooter{
