@@ -1,26 +1,37 @@
+Sitio Web desarrollado para Fernanda Alberici Pavón
 
-<h2 align="center">Portfolio Web desarrollado para Fernanda Alberici Pavón</h2>
+Faltantes:
 
-<h3 align="left">Trabajo freelance realizado por: </h3>
+Nav:
 
-<p align="left">
+    No es responsive
+    El color debe ser rgb(218, 24, 70) (todos los rojos deben tener este valor);
+    Modificar los subrayados en hover
+    Modificar tamaño de tipografía
 
-* Diseño UX >>> Paula Beneite https://www.behance.net/paulabeneite 
+Home:
 
-* Desarrollo en HTML, CSS (Nav + Home + Resumen + Sobre mi) >>> Alejandra Ortega Bauer https://github.com/AlejandraOrtegaBauer
+    Centrar texto de home con el nav.
+    Fondo del home no se ve
+    Sacar sombra interna al boton de "conoceme" y cambiar por "Conoceme mas"
+    El color del boton y subrayados iguales al nav (el boton conoceme esta rosa)
 
-* Desarrollo en HTML, CSS + Programación en JavaScript (Portfolio + Contacto + Form-Popup) >>> Lucía Roig Seigneur https://github.com/l-u-c-i-a-r-o-i-g 
+Resumen:
 
-</p>
+    Subrayar "Resumen" (título) y "Herramientas"
+    Centrar
+    Revisar tamaño tipografico de "resumen" , "educación" "herramientas" y " experiencia"
+    Los meses/años van en italic (cursiva)
 
-<h3 align="center">Lenguajes y herramientas utilizadas:</h3>
- <p align="center"> 
- <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
-<img src="https://i.ibb.co/M7WkcDY/HTML.png" alt="html5" width="40" height="40"/> </a> 
-<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
-<img src="https://i.ibb.co/1znfnp9/CSS.png" alt="css3" width="40" height="40"/> </a> 
-<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> 
-<img src="https://i.ibb.co/zmYgCv7/BOOTSTRAP.png" alt="bootstrap" width="40" height="40"/> </a> 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
-<img src="https://i.ibb.co/K5rTsj2/JS.png" alt="javascript" width="40" height="40"/> </a>
- </p>
+Sobre mi:
+
+    Centrar todo
+    Bajar un poco el Sobre mi, esta muy pegado al nav.
+    Color a "Fernanda Alberici"
+    Sacar sombra interna a los botones
+    Acomodar iconos dentro de botones (whatsapp y mail)
+    Cambiar color a los botones
+    Modificar ancho de linea de subrayado de "Sobre Mi" y "Mis Servicios"
+    El hover de los botones de whastapp y el mail cambiar a blanco opaco / letra a negro
+    Falta el hover de los bordes en los servicios
+    Modificar tamaños en recuadros de servicios y en los textos

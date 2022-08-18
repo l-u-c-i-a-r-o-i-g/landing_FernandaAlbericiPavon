@@ -5,14 +5,18 @@
   font-family: raleway, sans-serif;
 }
 
+
 body {
-  background-image: url(../imgs/imgfondo.png);
   background-color: rgb(0, 0, 0);
+  background-image: url(../imgs/Portfolio-text.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 770px;
+  background-position: top right;
+  background-size: 110px;
   height: auto;
+  background-position-y: 70%;
+  margin-bottom: 100px;
 }
+
 
 
 /*-----------------HEADER----------------*/
@@ -119,6 +123,10 @@ footer{
   display: none;
 }
 
+.dropstart{
+  display: none;
+}
+
 
 /* Estilos Portfolio - Lucía */
 .title {
@@ -131,7 +139,7 @@ footer{
   font-size: 2.8rem;
   font-weight: 800;
   color: white;
-  padding: 0.8rem 0.8rem 0 0.8rem;
+  padding: 0.8rem;
 }
 
 section {
@@ -139,6 +147,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   flex-direction: column;
   margin: 40px auto;
@@ -240,7 +249,7 @@ section ul li.active {
 .photo .box .itemBox .details .content p {
   margin: 10px 0 0;
   padding: 0;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 100;
 }
 
@@ -256,9 +265,15 @@ section {
 section ul {
   padding: 0 ;
   margin: 0 ;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+}
+section li {
+  padding: 0 ;
+  margin: 0 ;
+
 }
 section ul li {  
   text-align: center;
@@ -267,62 +282,59 @@ section ul li {
   letter-spacing: 1px;
   cursor: pointer;
 }
-
-footer{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 5em;
-  background-color: rgb(0, 0, 0);
-  justify-content: space-evenly;
-  align-items: center;
-  bottom: 0;
+body {
+  background-image: url(../imgs/imgfondo.png);
+}
 }
 
-.socialFooter{
-  min-width: 18em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+@media (max-width: 1209px){
+  footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5em;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+  }
+
+  .socialFooter{
+    min-width: 18em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
 
-.navmenu{
-  display: none;
-}
+  .navmenu{
+    display: none;
+  }
 
-.social{
-  display: none;
-}
+  .social{
+    display: none;
+  }
 
-.socialFooter{
-  min-width: 18em;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .socialFooter a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: rgba(166, 16, 51, 0.44);
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
 
-.socialFooter a{
-  text-decoration: none;
-  font-size: 1.5rem;
-  background: rgba(166, 16, 51, 0.44);
-  width: 2.8rem;
-  height: 2.8rem;
-  text-align: center;
-  line-height: 45px;
-  color: rgba(255, 255, 255, 1);
-  border-radius: 50%;
-}
+  .socialFooter a:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(218, 24, 70, 1);
+  } 
 
-.socialFooter a:hover {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(218, 24, 70, 1);
-} 
-
-.dropstart{
-  display: inline;
-  margin-right: 2em;
-}
-
+  .dropstart{
+    display: inline;
+    margin-right: 2em;
+  }
 }
 /* FIN Estilos Portfolio */
